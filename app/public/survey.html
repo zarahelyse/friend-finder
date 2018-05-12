@@ -191,7 +191,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="matchModalTitle">Say Hi to your New Friend!</h5>
+          <h5 class="modal-title" id="matchModalTitle">Heyoooooooo!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -230,7 +230,7 @@
     let newFriend = {
       name: $("#name").val().trim(),
       photo: $("#photo").val().trim(),
-      surveyData: surveyAns
+      scores: surveyAns
     };
 
     //post to friends.js via apiRoutes.js
@@ -242,44 +242,7 @@
     };
 
   });
-   function friendFinder(newFriend) {
-    let matchContact= []; 
-    $.get("/api/friends", function(res) {
-      let matchTotals = [];
-      let bestMatch; 
-      let bestMatchIndex; 
-      for (let i = 0; i < res.length-1; i++) {
-        let matchArr =[];
-        let totals = 0;
-        for (let x =0; x < 10; x++) { 
-          matchArr.push(Math.abs(newFriend.surveyData[x] - res[i].surveyData[x])); 
-        }
-        matchArr.forEach(score => {
-          totals += score; 
-        })
-        let tempArr = []; 
-        tempArr.push(i, totals); 
-        matchTotals.push(tempArr); 
-        bestMatch = matchTotals.sort(function(a, b){
-          return b[1] > a[1] ? -1 : 1; 
-        });
-        
-        bestMatchIndex = parseFloat(bestMatch[0][0]);
-      }
-      let newFriendMatch = {
-        name: res[bestMatchIndex].name,
-        email: res[bestMatchIndex].email,
-        photo: res[bestMatchIndex].photo
-      }; 
-      // console.log(newFriendMatch); 
-     
-      $('#match-name').text(newFriendMatch.name); 
-      $('#match-img').attr('src', newFriendMatch.photo); 
-      
-      matchContact.push(newFriend); 
-      matchContact.push(newFriendMatch); 
-    }); // end GET
-  }; 
+   
   </script>
   
 </body>
