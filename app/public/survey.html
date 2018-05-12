@@ -235,9 +235,10 @@
 
     //post to friends.js via apiRoutes.js
     $.post("/api/friends", newFriend, function(data) {
-        $("#name").val(data.name); 
-        $("#photo").val(data.photo);
+        $("#match-name").html(data.name); 
+        $("#match-img").attr("src", data.photo);
         $('#matchModal').modal('show');
+        console.log(data)
       });
     };
 
