@@ -232,16 +232,15 @@
       photo: $("#photo").val().trim(),
       surveyData: surveyAns
     };
-    // console.log(newFriend);
-    friendFinder(newFriend); 
+
     //post to friends.js via apiRoutes.js
     $.post("/api/friends", newFriend, function(data) {
-        $("#name").val(''); 
-        $("#photo").val('');
+        $("#name").val(data.name); 
+        $("#photo").val(data.photo);
+        $('#matchModal').modal('show');
       });
-    
-    $('#matchModal').modal('show');
     };
+
   });
    function friendFinder(newFriend) {
     let matchContact= []; 
