@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      
+      <h1>Always Sunny Friend Finder</h1>
+      <h3>Heyooooo! Find your new 'gang'!</h3>
+      <hr>
+      <form>
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="photoURL">Photo Link</label>
+          <input type="text" class="form-control" id="photo" placeholder="Link to Profile Photo">
+        </div>
+      </form>
+
+    </div>
+
+    <div class="row"><!--Questionaire-->
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title"><strong>Answer these, ya jabroni</strong></h2>
+          </div><!--end panel heading-->
+
+          <div class="panel-body" id="well-section">
+
+            <div class="question_text"><strong>I agree with the following statement:</strong>
+            <br> also all of these are niche memes within the Always Sunny Fandom so like.. don't feel too bad if you don't get the jokes.. because of the implication</div>
+          
+            <div class="form-group">
+              <label for="sel1">Dennis is a bastard, man</label>
+              <select class="form-control" id="q1">
+                <option value="1">1 Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 Strongly Agree</option>
+              </select>
+            </div>
+
+              <br>
+
+            <div class="form-group">
+            <label for="sel2">I would play Night Crawlers with Charlie and Frank.</label>
+            <select class="form-control" id="q2">
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+
+             <br>
+
+          <div class="form-group">
+            <label for="sel3">"Frank's Brother" sucks worse than "Liberty Bell"</label>
+            <select class="form-control" id="q3">
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+
+          <br>
+
+          <div class="form-group">
+            <label for="sel4">Dennis is the thiccest</label>
+            <select class="form-control" id="q4">
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+
+            <br>
+
+          <div class="form-group">
+            <label for="sel5">Choose your favorite Mac:</label>
+            <select class="form-control" id="q5">
+              <option value="1">1 Fat Mac</option>
+              <option value="2">2 Country Mac</option>
+              <option value="3">3 Gay Mac</option>
+              <option value="4">4 Regular Mac</option>
+              <option value="5">5 Pious Catholic Mac</option>
+            </select>
+          </div>
+
+            <br>
+
+          <div class="form-group">
+            <label for="sel6">Who shat the bed?</label>
+            <select class="form-control" id="q6">
+              <option value="1">1 Dennis</option>
+              <option value="2">2 Frank</option>
+              <option value="3">3 Mac</option>
+              <option value="4">4 Charlie</option>
+              <option value="5">5 Dee</option>
+            </select>
+          </div>
+
+            <br>
+
+          <div class="form-group">
+            <label for="sel7">AP Bio and The Mick ain't shit</label>
+            <select class="form-control" id="q7">
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+
+
+            <br>
+
+          <div class="form-group">
+            <label for="sel9">What kind of a person salts another human being? There's no joy in salting someone. Everyone loses.</label>
+            <select class="form-control" id="q9">
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+              <label for="sel10">Why are we intervening on Frank?</label>
+              <select class="form-control" id="q10">
+                <option value="1">1 His goddamn lliteracy</option>
+                <option value="2">2 Lack of good ideas</option>
+                <option value="3">3 He has too much money</option>
+                <option value="4">4 Not because he's drinking, but because he's drinking WITHOUT US</option>
+                <option value="5">5 His drinking</option>
+              </select>
+            </div>      
+
+            <br>
+
+            <div class="form-group">
+                <label for="sel8">When we finish this class, we will strap on our job helmets and squeeze down into a job cannon and fire off into job land, where jobs grow on jobbies </label>
+                <select class="form-control" id="q8">
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+              </div>
+
+            <button type="button" id="submit" class="btn btn-info btn-lg btn-block">Submit</button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+  $("#submit").on("click", function(event) {
+    if ($("#name").val() === '' || $("#photo").val() === '') {
+      $('#warningModal').modal('show')
+    } else {
+      event.preventDefault();
+      let surveyAns = [];
+      surveyAns.push(
+        parseFloat($("#q1").val()), 
+        parseFloat($("#q2").val()), 
+        parseFloat($("#q3").val()), 
+        parseFloat($("#q4").val()), 
+        parseFloat($("#q5").val()), 
+        parseFloat($("#q6").val()), 
+        parseFloat($("#q7").val()), 
+        parseFloat($("#q8").val()), 
+        parseFloat($("#q9").val()), 
+        parseFloat($("#q10").val())
+      ); 
+    let newFriend = {
+      name: $("#name").val().trim(),
+      photo: $("#photo").val().trim(),
+      surveyData: surveyAns
+    };
+    // console.log(newFriend);
+    friendFinder(newFriend); 
+    //post to friends.js via apiRoutes.js
+    $.post("/api/friends", newFriend, function(data) {
+        $("#name").val(''); 
+        $("#photo").val('');
+      });
+    
+    $('#matchModal').modal('show');
+    };
+  });
+   function friendFinder(newFriend) {
+    let matchContact= []; 
+    $.get("/api/friends", function(res) {
+      let matchTotals = [];
+      let bestMatch; 
+      let bestMatchIndex; 
+      for (let i = 0; i < res.length-1; i++) {
+        let matchArr =[];
+        let totals = 0;
+        for (let x =0; x < 10; x++) { 
+          matchArr.push(Math.abs(newFriend.surveyData[x] - res[i].surveyData[x])); 
+        }
+        matchArr.forEach(score => {
+          totals += score; 
+        })
+        let tempArr = []; 
+        tempArr.push(i, totals); 
+        matchTotals.push(tempArr); 
+        bestMatch = matchTotals.sort(function(a, b){
+          return b[1] > a[1] ? -1 : 1; 
+        });
+        
+        bestMatchIndex = parseFloat(bestMatch[0][0]);
+      }
+      let newFriendMatch = {
+        name: res[bestMatchIndex].name,
+        email: res[bestMatchIndex].email,
+        photo: res[bestMatchIndex].photo
+      }; 
+      // console.log(newFriendMatch); 
+     
+      $('#match-name').text(newFriendMatch.name); 
+      $('#match-img').attr('src', newFriendMatch.photo); 
+      
+      matchContact.push(newFriend); 
+      matchContact.push(newFriendMatch); 
+    }); // end GET
+  }; 
+  </script>
+  
+</body>
