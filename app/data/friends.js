@@ -2,7 +2,7 @@ var friendData = [
     {
     "name":"Dee Reynolds",
     "photo":"https://media0ch-a.akamaihd.net/25/46/d7bb68957ec787d6673f2c8e05b8e9fb.jpg",
-    "scores":[5,3,2,4,3,1,5,5,4,2]
+    "scores":[5,1,3,1,4,2,5,5,4,5]
     },
     {
     "name":"Charlie Kelly",
@@ -10,10 +10,24 @@ var friendData = [
     "scores":[3,2,1,4,4,5,2,1,2,4]
     },
     {
-    "name":"Tina Belcher",
-    "photo":"https://uproxx.files.wordpress.com/2016/01/mac-banner.jpg?quality=95&w=650&h=360",
-    "scores":[1,2,4,2,5,4,2,3,2,5]
+    "name":"Dennis Reynolds",
+    "photo":"http://bh-s2.azureedge.net/bh-uploads/2016/09/1-Dennis-1050x646.jpg",
+    "scores":[5,1,3,1,4,2,5,5,4,5]
     },
+    {
+    "name":"Frank Reynolds",
+    "photo":"https://i.ytimg.com/vi/wSJSWy2o_1I/maxresdefault.jpg",
+    "scores":[3,2,1,4,4,5,2,1,2,4]
+    },
+    {
+     "name":"Mac McDonald",
+    "photo":"https://i.imgflip.com/243o09.jpg",
+    "scores":[5,1,3,1,4,2,5,5,4,5]
+    },
+
+        
+    
+
   ];
   
   module.exports = friendData;
